@@ -10,9 +10,11 @@
   position: fixed;
   display: grid;
   margin: auto;
-  grid-template-columns: 200px 550px 200px;
+  grid-template-columns: 200px 600px 200px;
   gap: 10px;
   padding: 20px 50px;
+  padding-right: 20px;
+  border-bottom: 1px solid #f7f7f7;
 }
 
 .logo img {
@@ -37,6 +39,13 @@
   width: 30px;
   height: 28px;
   cursor: pointer;
+}
+
+.phtlg span img {
+  height: 12px;
+  width: 16px;
+  cursor: pointer;
+  margin-right: 2px;
 }
 
 .inpt ::placeholder {
@@ -109,6 +118,35 @@ border:1px solid #8d8d8d;
   cursor: pointer;
 }
 
+.heading {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 100px;
+}
+
+.heading p:first-of-type {
+  font-size: 25px;
+}
+
+.heading p:last-child {
+  font-size: 18px;
+  padding: 8px 15px;
+  border: 1px solid #dfdfe0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.heading img {
+  height: 6px;
+  margin-bottom: 2px;
+}
+
 .navlinks button:hover {
   background-color: #138d75;
+}
+
+.heading P:last-child:hover {
+  border: 1px solid #333;
 }
