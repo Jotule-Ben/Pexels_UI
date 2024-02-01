@@ -6,7 +6,7 @@
 }
 
 .navbar {
- width: 100%;
+  width: 100%;
   position: fixed;
   display: grid;
   margin: auto;
@@ -36,6 +36,7 @@
   padding-left: 5px;
   width: 30px;
   height: 28px;
+  cursor: pointer;
 }
 
 .inpt ::placeholder {
@@ -68,6 +69,7 @@ border:1px solid #8d8d8d;
   padding: 10px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  cursor: pointer;
 }
 
 .search img {
@@ -86,11 +88,27 @@ border:1px solid #8d8d8d;
   cursor: pointer;
 }
 
-.navlinks p{
- margin-top: -1px;
- font-size: 25px;
- padding-right: 1px;
- padding-left: 8px;
- padding-right: 7px;
- cursor: pointer;
+.navlinks p {
+  margin-top: -1px;
+  font-size: 25px;
+  padding-right: 1px;
+  padding-left: 8px;
+  padding-right: 7px;
+  cursor: pointer;
+}
+
+.navlinks button {
+  margin-top: -6px;
+  margin-left: 8px;
+  font-size: 18px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  background-color: #05a081;
+  border: 1px solid #05a081;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navlinks button:hover {
+  background-color: #138d75;
 }
