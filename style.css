@@ -157,7 +157,6 @@ section img {
   display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(3, 360px);
-  grid-template-rows: minmax(5px, auto);
   gap: 10px;
   max-width: 1050px;
 }
@@ -501,7 +500,6 @@ section img {
 
 .gditem70 {
   margin-top: -640px;
-  position: relative;
 }
 
 .hvr {
@@ -524,7 +522,7 @@ section img {
   padding: 5px;
   margin-right: 170px; */
   top: 1;
-  right: 10;
+  right: 1;
   display: none;
 }
 
@@ -564,20 +562,16 @@ section img {
 .heading P:last-child:hover {
   border: 1px solid #333;
 }
-
+/* 
 section img:hover {
   opacity: 0.8;
-}
+} */
 
 
 .sec1 div .hvimg img:hover {
   display: block;
 }
 
-.sec1 img:hover {
-  opacity: 0.5;
-}
-
-.gditem70 .hvr:hover {
+.sec1 img .hvr:hover {
   display: block;
 }
