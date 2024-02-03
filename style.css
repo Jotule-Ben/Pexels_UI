@@ -10,7 +10,7 @@
   position: fixed;
   display: grid;
   margin: auto;
-  grid-template-columns: 200px 600px 200px;
+  grid-template-columns: 200px 660px 200px;
   gap: 10px;
   padding: 20px 50px;
   padding-right: 20px;
@@ -22,6 +22,8 @@
   padding-bottom: 10px;
   width: 115px;
   height: 45px;
+  cursor: pointer;
+  filter: grayscale(0);
 }
 
 .phtlg {
@@ -123,7 +125,7 @@ border:1px solid #8d8d8d;
   display: flex;
   justify-content: space-between;
   margin-left: 50px;
-  margin-right: 50px;
+  margin-right: 95px;
   padding-top: 100px;
 }
 
@@ -156,9 +158,11 @@ section img {
 .sec1 {
   display: grid;
   margin: 0 auto;
-  grid-template-columns: repeat(3, 360px);
-  gap: 10px;
+  grid-template-columns: repeat(3, 400px);
+  gap: 8px;
   max-width: 1050px;
+  margin-left: 50px;
+  margin-right: 10px;
 }
 
 .gditem1 {
@@ -171,7 +175,7 @@ section img {
 
 .sec1 img {
   height: 500px;
-  width: 350px;
+  width: 390px;
 }
 
 .gditem2 img {
@@ -508,10 +512,9 @@ section img {
   border: 1px solid #05a081;
   border-radius: 20px;
   cursor: pointer;
-  z-index: 999;
-  position: absolute;
-  right: 15;
-  top: 420;
+  /* margin-right: -5000px; */
+  /* position: relative; */
+  /* top: 5; */
   display: none;
 }
 
@@ -524,13 +527,7 @@ section img {
   top: 1;
   right: 1;
   display: none;
-}
-
-.gditem70:hover .hvr {
-  display: block;
-}
-.gditem70:hover .hrt {
-  display: block;
+  justify-content: center;
 }
 
 .hvr img {
@@ -546,9 +543,19 @@ section img {
   z-index: 5;
 }
 
+.cpy img {
+  height: 30px;
+  width: 30px;
+  display: none;
+}
+
 .hrt img {
   height: 30px;
   width: 40px;
+}
+
+.logo:hover {
+  filter: grayscale(0.5);
 }
 
 .navlinks button:hover {
@@ -562,16 +569,33 @@ section img {
 .heading P:last-child:hover {
   border: 1px solid #333;
 }
-/* 
-section img:hover {
-  opacity: 0.8;
-} */
 
+section img:hover {
+  filter: brightness(70%);
+}
 
 .sec1 div .hvimg img:hover {
   display: block;
 }
 
 .sec1 img .hvr:hover {
+  display: block;
+}
+
+.gditem70:hover .hvr {
+  display: block;
+}
+.gditem70:hover .hrt {
+  display: block;
+}
+
+.gditem:hover .hvr {
+  display: block;
+}
+.gditem:hover .hrt {
+  display: block;
+}
+
+.gditem:hover .cpy img {
   display: block;
 }
