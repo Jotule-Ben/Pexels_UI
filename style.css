@@ -16,12 +16,14 @@
   padding-right: 20px;
   border-bottom: 1px solid #f7f7f7;
   background-color: #fff;
+  z-index: 5;
 }
 
 .logo img {
   padding-bottom: 10px;
-  width: 115px;
-  height: 45px;
+  margin-top: -4px;
+  width: 120px;
+  height: 50px;
   cursor: pointer;
   filter: grayscale(0);
 }
@@ -37,18 +39,24 @@
 }
 
 .phtlg img {
-  padding-top: 5px;
+  padding-top: 9px;
   padding-left: 5px;
-  width: 30px;
-  height: 28px;
+  width: 33px;
+  height: 35px;
   cursor: pointer;
 }
 
+.phtlg span {
+  padding-bottom: 50px;
+  font-size: 20px;
+}
+
 .phtlg span img {
-  height: 12px;
-  width: 16px;
+  height: 18px;
+  width: 18px;
   cursor: pointer;
   margin-right: 2px;
+  margin-bottom: 8px;
 }
 
 .inpt ::placeholder {
@@ -159,7 +167,7 @@ section img {
   display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(3, 400px);
-  gap: 8px;
+  gap: 10px;
   max-width: 1050px;
   margin-left: 50px;
   margin-right: 10px;
@@ -178,44 +186,44 @@ section img {
   width: 390px;
 }
 
-.gditem2 img {
-  height: 480px;
+.gditem1 img {
+  cursor: pointer;
+  height: 600px;
 }
 
-.gditem1 img {
+.gditem2 img {
   height: 550px;
 }
 
 .gditem3 img {
-  height: 550px;
+  height: 600px;
 }
 
-.gditem4 {
-  width: 33.3%;
+.gditem4 img {
   height: 100%;
-  margin-top: -50px;
+  margin-top: -40px;
 }
 
 .gditem5 {
   width: 33.3%;
   height: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .gditem6 {
-  margin-top: -525px;
+  margin-top: -540px;
 }
 
 .gditem7 {
-  margin-top: -60px;
+  margin-top: -30px;
 }
 
 .gditem7 img {
-  height: 400px;
+  height: 370px;
 }
 
 .gditem9 {
-  margin-top: -510px;
+  margin-top: -530px;
 }
 
 .gditem10 {
@@ -483,45 +491,31 @@ section img {
 }
 
 .gditem65 {
-  margin-top: 7px;
+  margin-top: 10px;
 }
 
-.gditem66 {
-    /* background-image: url(./Assets/px66.jpeg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: pointer; */
+.gditem66 img {
+  cursor: pointer;
   margin-top: -1040px;
+  height: 560px;
 }
 
-.gditem67 {
-    /* background-image: url(./Assets/px67.jpeg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: pointer; */
+.gditem67 img {
+  cursor: pointer;
   margin-top: -635px;
 }
 
-.gditem68 {
-    /* background-image: url(./Assets/px68.jpeg); */
-  background-repeat: no-repeat;
-  background-size: contain;
+.gditem68 img {
   cursor: pointer;
-  margin-top: 70px;
+  margin-top: 20px;
 }
 
-.gditem69 {
-    background-image: url(./Assets/px69.jpeg);
-  background-repeat: no-repeat;
-  background-size: contain;
+.gditem69 img {
   cursor: pointer;
-  margin-top: -1040px;
+  margin-top: -980px;
 }
 
-.gditem70 {
-  background-image: url(./Assets/px70.jpeg);
-  background-repeat: no-repeat;
-  background-size: contain;
+.gditem70 img {
   margin-top: -640px;
   cursor: pointer;
 }
@@ -537,7 +531,7 @@ section img {
   /* margin-right: -5000px; */
   /* position: relative; */
   /* top: 5; */
-  display: none;
+  display: block;
 }
 
 .hrt {
@@ -548,7 +542,7 @@ section img {
   margin-right: 170px; */
   top: 1;
   right: 1;
-  display: none;
+  display: block;
   justify-content: center;
 }
 
@@ -565,11 +559,12 @@ section img {
   z-index: 5;
 }
 
-.cpy img {
+.gditem70 .cpy img {
   height: 30px;
-  width: 30px;
+  width: 40px;
   display: none;
-  right: 5px;
+  margin-left: 300px;
+  margin-top: -620px;
   top: 2px;
 }
 
@@ -582,9 +577,10 @@ section img {
   display: none;
    */
 
-.hrt img {
+.gditem70 .hrt img {
   height: 30px;
   width: 40px;
+  margin-left: 750px;
 }
 
 .logo:hover {
@@ -603,15 +599,63 @@ section img {
   border: 1px solid #333;
 }
 
-section img:hover {
+.gditem:hover {
   filter: brightness(70%);
 }
 
-.sec1 div .hvimg img:hover {
+/* .sec1 div .hvimg img:hover {
   display: block;
 }
 
 .sec1 img .hvr:hover {
   display: block;
+} */
+
+.gditem:hover .cpy {
+  display: none;
 }
 
+.gditem:hover .hrt {
+  display: none;
+}
+
+.gditem:hover .hvr {
+  display: none;
+}
+
+.hrt img {
+  height: 20px;
+  width: 20px;
+  display: none;
+}
+
+.cpy img {
+  height: 20px;
+  width: 20px;
+  display: none;
+}
+
+.hvr {
+  display: none;
+}
+
+@media screen and (max-width: 320px) {
+  .hvr {
+    display: none;
+  }
+
+  .hrt {
+    display: none;
+  }
+
+  .cpy {
+    display: none;
+  }
+  .sec1 img {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 100%;
+  }
+}
