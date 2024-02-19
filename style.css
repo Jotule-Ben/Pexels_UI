@@ -651,11 +651,12 @@ section img {
   .cpy {
     display: none;
   }
-  .sec1 img {
+  .sec1 {
     display: grid;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
     grid-template-columns: repeat(1, 1fr);
     max-width: 100%;
+    gap: 10px;
   }
 }
